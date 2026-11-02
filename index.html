@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 id="profile-title">Welcome to My Portfolio</h1>
+      <p class="intro-text">Hello, my name is <strong>Danial</strong>. IT student.</p>
+      <button id="update-headline-btn">Update Headline</button>
+      <button id="light-theme-btn">Light Theme</button>
+      <button id="dark-theme-btn">Dark Theme</button>
+    </div>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Biography: Learning web design.</p>
+      <p id="status-message">Current status: <strong>Currently learning jQuery!</strong></p>
+      <ul>
+        <li>Guitar player</li>
+        <li>Puzzle solver</li>
+      </ul>
+      <div>
+        <button id="hide-status-btn">Hide</button>
+        <button id="show-status-btn">Show</button>
+        <button id="toggle-status-btn">Toggle</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Gallery</h2>
+      <div>
+        <img class="gallery-img" src="screenshots/img1.png" alt="Screenshot 1">
+        <img class="gallery-img" src="screenshots/img2.png" alt="Screenshot 2">
+      </div>
+      <button id="fade-in-btn">Fade In</button>
+      <button id="fade-out-btn">Fade Out</button>
+      <button id="fade-toggle-btn">Fade Toggle</button>
+    </div>
+
+    <div class="card">
+      <h2>Favorites</h2>
+      <div class="collapsible-heading" data-target="#panel-music">My Favorite Music</div>
+      <div id="panel-music" class="collapsible-panel">Indie rock and acoustic guitar.</div>
+      <div class="collapsible-heading" data-target="#panel-movie">My Favorite Movie</div>
+      <div id="panel-movie" class="collapsible-panel">Anime and sci-fi.</div>
+      <div class="collapsible-heading" data-target="#panel-subject">My Favorite Subject</div>
+      <div id="panel-subject" class="collapsible-panel">Computer Science.</div>
+    </div>
+
+    <div class="card">
+      <h2>Technical Skills</h2>
+      <ul id="skills-list">
+        <li>HTML5 / CSS</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+      </ul>
+      <div class="skill-bar-container" data-width="85">
+        <span>HTML5 / CSS</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      </div>
+      <div class="skill-bar-container" data-width="70">
+        <span>JavaScript</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
+      </div>
+      <div class="custom-container">
+        <input type="text" id="new-skill-input" placeholder="New skill...">
+        <button id="add-skill-btn">Add</button>
+        <button id="prepend-skill-btn">Prepend</button>
+        <button id="remove-skill-btn">Remove</button>
+        <button id="animate-skills-btn">Animate Skills</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Connect</h2>
+      <p><a id="social-link" href="https://github.com" target="_blank">GitHub Profile</a></p>
+      <button id="change-link-btn">Change Link</button>
+    </div>
+
+    <div class="card">
+      <h2>Contact Form</h2>
+      <form>
+        <label>Name: <input type="text" id="form-name"></label><br><br>
+        <label>Email: <input type="text" id="form-email"></label>
+      </form>
+      <p>Live Preview:</p>
+      <div id="live-output">Start typing above...</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

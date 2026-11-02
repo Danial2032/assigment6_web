@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fff;
+  color: #000;
+}
+body.dark-theme {
+  background-color: #222;
+  color: #fff;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+button {
+  margin: 2px;
+}
+.gallery-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 5px;
+}
+.collapsible-heading {
+  background-color: #eee;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+body.dark-theme .collapsible-heading {
+  background-color: #444;
+}
+.collapsible-panel {
+  display: none;
+  padding: 5px;
+  border-left: 2px solid #007BFF;
+}
+.skill-bar-bg {
+  background-color: #ddd;
+  height: 12px;
+  width: 100%;
+  margin-top: 2px;
+}
+.skill-bar-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #007BFF;
+}
+.custom-container {
+    margin-top: 10px;
+}
