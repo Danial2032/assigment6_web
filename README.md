@@ -30,4 +30,4 @@ Task 8. Basic Animation:
 
 Summary:
 
-Link:
+Link:https://danial2032.github.io/assigment6_web/
